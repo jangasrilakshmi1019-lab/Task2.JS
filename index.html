@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>JavaScript Practice Output</title>
+</head>
+ 
+<body>
+ 
+<h1>JavaScript Practice Examples</h1>
+ 
+<script>
+ 
+console.log("SECTION 1 – Basic Arithmetic");
+ 
+let a=25,b=4;
+ 
+console.log("Addition:",a+b);
+console.log("Subtraction:",a-b);
+console.log("Multiplication:",a*b);
+console.log("Division:",a/b);
+ 
+console.log("100 % 30 =",100%30);
+console.log("7 ** 2 =",7**2);
+console.log("2 ** 5 =",2**5);
+ 
+let num=50;
+console.log("50 / 5 =",num/5);
+ 
+console.log("45 % 6 =",45%6);
+console.log("0.5 * 8 =",0.5*8);
+console.log("75 - 200 =",75-200);
+console.log("10 + 20 + 30 =",10+20+30);
+console.log("9 % 2 =",9%2);
+ 
+ 
+console.log("SECTION 2 – Increment / Decrement");
+ 
+let x=5;
+console.log("a++ example:",x++,"then",x);
+ 
+x=5;
+console.log("++a example:",++x,"then",x);
+ 
+let c=10;
+let d=c++;
+console.log("a=10 b=a++ →",c,d);
+ 
+c=10;
+d=++c;
+console.log("a=10 b=++a →",c,d);
+ 
+let p=1;
+let q=p++ + p++;
+console.log("1++ + ++ :", "a=",p,"b=",q);
+ 
+p=1;
+q=++p + ++p;
+console.log("++a + ++a :", "a=",p,"b=",q);
+ 
+p=3;
+p=p++;
+console.log("a=3 a=a++ →",p);
+ 
+p=3;
+p=++p;
+console.log("a=3 a=++a →",p);
+ 
+let m=5;
+let n=--m;
+console.log("--x example →",m,n);
+ 
+let g=2;
+let h=g++ + ++g + g++;
+console.log("Complex increment → a=",g,"b=",h);
+ 
+let j=4;
+let k=--j + j-- + --j;
+console.log("Complex decrement → a=",j,"b=",k);
+ 
+let r=5;
+let s=r++ + r++ + r++;
+console.log("Multiple increments → a=",r,"b=",s);
+ 
+let t=10;
+t+=t++;
+console.log("a=10 a+=a++ →",t);
+ 
+ 
+console.log("SECTION 3 – Assignment Operators");
+ 
+let v=10;
+v+=5;
+console.log("10 +=5 →",v);
+ 
+v=20;
+v-=8;
+console.log("20 -=8 →",v);
+ 
+v=7;
+v*=3;
+console.log("7 *=3 →",v);
+ 
+v=40;
+v/=5;
+console.log("40 /=5 →",v);
+ 
+v=25;
+v%=4;
+console.log("25 %=4 →",v);
+ 
+let aa=5;
+aa+=3;
+aa*=2;
+console.log("a=5 a+=3 a*=2 →",aa);
+ 
+aa=10;
+aa-=2;
+aa/=4;
+console.log("a=10 a-=2 a/=4 →",aa);
+ 
+aa=8;
+aa%=3;
+console.log("8%=3 →",aa);
+ 
+aa=6;
+aa+=aa;
+console.log("6+=6 →",aa);
+ 
+aa=2;
+aa*=aa+=3;
+console.log("Complex assignment →",aa);
+ 
+ 
+console.log("SECTION 4 – Comparison");
+ 
+console.log("5=='5' →",5=="5");
+console.log("5==='5' →",5==="5");
+console.log("0==false →",0==false);
+console.log("0===false →",0===false);
+console.log("null==undefined →",null==undefined);
+console.log("null===undefined →",null===undefined);
+console.log("'10'>5 →","10">5);
+console.log("'2'>'10' →","2">"10");
+console.log("true==1 →",true==1);
+console.log("true===1 →",true===1);
+ 
+ 
+console.log("SECTION 5 – Logical Operators");
+ 
+console.log("true && false →",true && false);
+console.log("true || false →",true || false);
+console.log("false || false →",false || false);
+console.log("!true →",!true);
+console.log("!(5>2) →",!(5>2));
+console.log("5>3 && 10>5 →",5>3 && 10>5);
+console.log("5>3 && 10<5 →",5>3 && 10<5);
+console.log("5<3 || 10<5 →",5<3 || 10<5);
+console.log("5<3 || 10>5 →",5<3 || 10>5);
+console.log("(5>2 && 3>1)||(10<2) →",(5>2 && 3>1)||(10<2));
+ 
+ 
+console.log("SECTION 6 – Ternary Operator");
+ 
+let age=20;
+console.log(age>=18 ? "Adult":"Minor");
+ 
+let marks=45;
+console.log(marks>=50 ? "Pass":"Fail");
+ 
+let number=7;
+console.log(number%2==0?"Even":"Odd");
+ 
+let score=85;
+let grade= score>90?"A": score>75?"B": score>50?"C":"Fail";
+console.log("Grade →",grade);
+ 
+let num2=-3;
+console.log(num2>=0?"Positive":"Negative");
+ 
+ 
+console.log("SECTION 7 – String Concatenation");
+ 
+console.log("Hello"+" "+"World");
+ 
+let first="Srilakshmi";
+let last="Janga";
+ 
+console.log("Full Name:",first,last);
+ 
+console.log(`Template: ${first} ${last}`);
+ 
+console.log('"10"+5 →',"10"+5);
+console.log('5+"10" →',5+"10");
+ 
+ 
+console.log("SECTION 8 – Implicit Type Conversion");
+ 
+console.log('"5"+2 →',"5"+2);
+console.log('"5"-2 →',"5"-2);
+console.log('"5"*2 →',"5"*2);
+console.log("true+1 →",true+1);
+console.log('false+"1" →',false+"1");
+ 
+ 
+console.log("SECTION 9 – Explicit Conversion");
+ 
+console.log("Number('123') →",Number("123"));
+console.log("Number('abc') →",Number("abc"));
+console.log("Number(true) →",Number(true));
+console.log("Boolean('') →",Boolean(""));
+console.log("Boolean('hello') →",Boolean("hello"));
+ 
+ 
+console.log("FINAL RAPID FIRE");
+ 
+console.log("== compares value only (type conversion allowed)");
+console.log("=== compares value and type");
+console.log("a++ uses value then increments, ++a increments then uses value");
+console.log("Falsy values: false, 0, '', null, undefined, NaN");
+console.log('"5"-2 works because JS converts string to number');
+console.log('"5"+2 concatenates because + operator joins strings');
+console.log("null == undefined is true because both represent empty values");
+ 
+</script>
+ 
+</body>
+</html>
