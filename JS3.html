@@ -1,312 +1,303 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title>JavaScript Practice</title>
+<title>JavaScript Practice</title>
 </head>
 <body>
 
-<h1>JavaScript Practice Output</h1>
-<pre id="output"></pre>
+<h2>Open Console to See Output</h2>
 
 <script>
 
-document.write("SECTION 1 – If / If Else <br><br>");
+// ================= SECTION 1 =================
+console.log("SECTION 1 – If / If Else");
 
 //1
 let num = 15;
 if(num > 10){
-    document.write("Number is big <br>");
+console.log("Number is big");
 }
 
 //2
 let age = 20;
 if(age >= 18){
-    document.write("Eligible to vote <br>");
+console.log("Eligible to vote");
 }else{
-    document.write("Not eligible to vote <br>");
+console.log("Not eligible to vote");
 }
 
 //3
 let temperature = 35;
 if(temperature > 30){
-    document.write("Hot <br>");
+console.log("Hot");
 }else{
-    document.write("Cool <br>");
+console.log("Cool");
 }
 
 //4
 let number = -5;
 if(number >= 0){
-    document.write("Positive <br>");
+console.log("Positive");
 }else{
-    document.write("Negative <br>");
+console.log("Negative");
 }
 
 //5
 let n = 8;
 if(n % 2 == 0){
-    document.write("Even <br>");
+console.log("Even");
 }else{
-    document.write("Odd <br>");
+console.log("Odd");
 }
 
-document.write("<br>SECTION 2 – Else If <br><br>");
+
+// ================= SECTION 2 =================
+console.log("SECTION 2 – Else If");
 
 //1
-let marks = 85;
+let marks = 75;
 
 if(marks >= 90){
-    document.write("Grade A <br>");
+console.log("Grade A");
 }
 else if(marks >= 70){
-    document.write("Grade B <br>");
+console.log("Grade B");
 }
 else if(marks >= 50){
-    document.write("Grade C <br>");
+console.log("Grade C");
 }
 else{
-    document.write("Fail <br>");
+console.log("Fail");
 }
 
 //2
 let hour = 14;
 
 if(hour < 12){
-    document.write("Morning <br>");
+console.log("Morning");
 }
 else if(hour < 17){
-    document.write("Afternoon <br>");
+console.log("Afternoon");
 }
 else if(hour < 21){
-    document.write("Evening <br>");
+console.log("Evening");
 }
 else{
-    document.write("Night <br>");
+console.log("Night");
 }
 
 //3
 let num2 = 0;
 
 if(num2 > 0){
-    document.write("Positive <br>");
+console.log("Positive");
 }
 else if(num2 < 0){
-    document.write("Negative <br>");
+console.log("Negative");
 }
 else{
-    document.write("Zero <br>");
+console.log("Zero");
 }
 
 //4
 let score = 80;
 
 if(score >= 100){
-    document.write("Winner <br>");
+console.log("Winner");
 }
 else if(score >= 50){
-    document.write("Good <br>");
+console.log("Good");
 }
 else{
-    document.write("Try again <br>");
+console.log("Try again");
 }
 
-//5 Largest of 3 numbers
+//5 Largest among 3 numbers
 let a = 10, b = 25, c = 15;
 
 if(a > b && a > c){
-    document.write("Largest: " + a + "<br>");
+console.log("Largest:", a);
 }
 else if(b > a && b > c){
-    document.write("Largest: " + b + "<br>");
+console.log("Largest:", b);
 }
 else{
-    document.write("Largest: " + c + "<br>");
+console.log("Largest:", c);
 }
 
-document.write("<br>SECTION 3 – Switch <br><br>");
 
-//1
+// ================= SECTION 3 =================
+console.log("SECTION 3 – Switch");
+
+//1 Day
 let day = 1;
 
 switch(day){
 case 1:
-document.write("Monday <br>");
+console.log("Monday");
 break;
 
 case 2:
-document.write("Tuesday <br>");
+console.log("Tuesday");
 break;
 
 case 3:
-document.write("Wednesday <br>");
+console.log("Wednesday");
 break;
 
 case 4:
-document.write("Thursday <br>");
+console.log("Thursday");
 break;
 
 case 5:
-document.write("Friday <br>");
+console.log("Friday");
 break;
 
 case 6:
-document.write("Saturday <br>");
+console.log("Saturday");
 break;
 
 case 7:
-document.write("Sunday <br>");
+console.log("Sunday");
 break;
 }
 
-//2
+//2 Traffic Light
 let trafficLight = "Red";
 
 switch(trafficLight){
 case "Red":
-document.write("Stop <br>");
+console.log("Stop");
 break;
 
 case "Yellow":
-document.write("Ready <br>");
+console.log("Ready");
 break;
 
 case "Green":
-document.write("Go <br>");
+console.log("Go");
 break;
 }
 
-//3
+//3 Month Season
 let month = "December";
 
 switch(month){
-
 case "December":
 case "January":
 case "February":
-document.write("Winter <br>");
+console.log("Winter");
 break;
 
 case "March":
 case "April":
 case "May":
-document.write("Summer <br>");
+console.log("Summer");
 break;
 
 case "June":
 case "July":
 case "August":
-document.write("Rainy <br>");
+console.log("Rainy");
 break;
 }
 
-//4
+//4 Role
 let role = "Admin";
 
 switch(role){
-
 case "Admin":
-document.write("Full Access <br>");
+console.log("Full Access");
 break;
 
 case "User":
-document.write("Limited Access <br>");
+console.log("Limited Access");
 break;
 
 case "Guest":
-document.write("View Only <br>");
+console.log("View Only");
 break;
 }
 
-//5
+//5 Grade
 let grade = "A";
 
 switch(grade){
-
 case "A":
-document.write("Excellent <br>");
+console.log("Excellent");
 break;
 
 case "B":
-document.write("Good <br>");
+console.log("Good");
 break;
 
 case "C":
-document.write("Average <br>");
+console.log("Average");
 break;
 
 default:
-document.write("Needs Improvement <br>");
+console.log("Needs Improvement");
 }
 
-document.write("<br>SECTION 4 – For Loop <br><br>");
+
+// ================= SECTION 4 =================
+console.log("SECTION 4 – For Loop");
 
 //1
 for(let i=1;i<=10;i++){
-document.write(i + " ");
+console.log(i);
 }
-
-document.write("<br>");
 
 //2
 for(let i=10;i>=1;i--){
-document.write(i + " ");
+console.log(i);
 }
-
-document.write("<br>");
 
 //3 Even
 for(let i=1;i<=20;i++){
 if(i%2==0){
-document.write(i + " ");
+console.log(i);
 }
 }
-
-document.write("<br>");
 
 //4 Odd
 for(let i=1;i<=20;i++){
 if(i%2!=0){
-document.write(i + " ");
+console.log(i);
 }
 }
 
-document.write("<br>");
-
-//5 Table
+//5 Table of 5
 for(let i=1;i<=10;i++){
-document.write("5 x "+i+" = "+(5*i)+"<br>");
+console.log("5 x",i,"=",5*i);
 }
 
-document.write("<br>SECTION 5 – While Loop <br><br>");
+
+// ================= SECTION 5 =================
+console.log("SECTION 5 – While Loop");
 
 //1
 let i=1;
 while(i<=5){
-document.write(i+" ");
+console.log(i);
 i++;
 }
-
-document.write("<br>");
 
 //2
 let j=5;
 while(j>=1){
-document.write(j+" ");
+console.log(j);
 j--;
 }
-
-document.write("<br>");
 
 //3 Even numbers
 let k=1;
 while(k<=10){
 if(k%2==0){
-document.write(k+" ");
+console.log(k);
 }
 k++;
 }
-
-document.write("<br>");
 
 //4 Sum
 let sum=0;
@@ -316,116 +307,115 @@ while(s<=10){
 sum=sum+s;
 s++;
 }
-document.write("Sum = "+sum+"<br>");
+
+console.log("Sum =",sum);
 
 //5 Square
 let sq=1;
+
 while(sq<=5){
-document.write((sq*sq)+" ");
+console.log(sq*sq);
 sq++;
 }
 
-document.write("<br><br>SECTION 6 – Do While <br><br>");
+
+// ================= SECTION 6 =================
+console.log("SECTION 6 – Do While");
 
 //1
 let d=1;
+
 do{
-document.write(d+" ");
+console.log(d);
 d++;
 }
 while(d<=5);
 
-document.write("<br>");
-
 //2
 let d2=5;
+
 do{
-document.write(d2+" ");
+console.log(d2);
 d2--;
 }
 while(d2>=1);
 
-document.write("<br>");
-
-//3 multiples of 3
+//3 Multiples of 3
 let m=3;
+
 do{
-document.write(m+" ");
+console.log(m);
 m+=3;
 }
 while(m<=30);
 
-document.write("<br>");
-
-//4 divisible by 4
+//4 Divisible by 4
 let dv=1;
+
 do{
 if(dv%4==0){
-document.write(dv+" ");
+console.log(dv);
 }
 dv++;
 }
 while(dv<=20);
 
-document.write("<br>");
-
-//5 until 10
+//5 Until 10
 let t=1;
+
 do{
-document.write(t+" ");
+console.log(t);
 t++;
 }
 while(t<=10);
 
-document.write("<br><br>SECTION 7 – For Of <br><br>");
+
+// ================= SECTION 7 =================
+console.log("SECTION 7 – For Of");
 
 //1
 let str="javascript";
 
 for(let ch of str){
-document.write(ch+" ");
+console.log(ch);
 }
-
-document.write("<br>");
 
 //2
 let fruits=["apple","banana","orange"];
 
 for(let fruit of fruits){
-document.write(fruit+" ");
+console.log(fruit);
 }
 
-document.write("<br>");
-
-//3 count
+//3 Count characters
 let count=0;
 
 for(let c1 of str){
 count++;
 }
 
-document.write("Characters = "+count+"<br>");
+console.log("Characters =",count);
 
-//4 vowels
+//4 Vowels
 for(let ch of str){
 if("aeiou".includes(ch)){
-document.write(ch+" ");
+console.log(ch);
 }
 }
 
-document.write("<br>");
-
-//5 sum array
+//5 Sum array
 let arr=[10,20,30];
 let total=0;
 
-for(let n1 of arr){
-total+=n1;
+for(let num1 of arr){
+total+=num1;
 }
 
-document.write("Sum = "+total+"<br>");
+console.log("Sum =",total);
 
-document.write("<br>SECTION 8 – For In <br><br>");
+
+// ================= SECTION 8 =================
+console.log("SECTION 8 – For In");
 
 let student={
 name:"Rahul",
@@ -435,36 +425,34 @@ department:"CSE"
 
 //values
 for(let key in student){
-document.write(student[key]+" ");
+console.log(student[key]);
 }
-
-document.write("<br>");
 
 //keys
 for(let key in student){
-document.write(key+" ");
+console.log(key);
 }
-
-document.write("<br>");
 
 //key value
 for(let key in student){
-document.write(key+" : "+student[key]+"<br>");
+console.log(key,":",student[key]);
 }
 
-document.write("<br>SECTION 9 – Functions <br><br>");
+
+// ================= SECTION 9 =================
+console.log("SECTION 9 – Functions");
 
 function add(a,b){
 return a+b;
 }
 
-document.write("Addition = "+add(10,5)+"<br>");
+console.log("Addition =",add(10,5));
 
 function square(num){
 return num*num;
 }
 
-document.write("Square = "+square(6)+"<br>");
+console.log("Square =",square(6));
 
 </script>
 
