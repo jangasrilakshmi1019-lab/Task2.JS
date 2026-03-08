@@ -1,405 +1,472 @@
-// SECTION 1 – If / If Else
- 
-// 1 Create a variable num = 15. If number is greater than 10 print 'Number is big'.
- 
-let num1= 15
- 
-if(num1>10){
-console.log(`the numeber is big`);
+<!DOCTYPE html>
+<html>
+<head>
+    <title>JavaScript Practice</title>
+</head>
+<body>
+
+<h1>JavaScript Practice Output</h1>
+<pre id="output"></pre>
+
+<script>
+
+document.write("SECTION 1 – If / If Else <br><br>");
+
+//1
+let num = 15;
+if(num > 10){
+    document.write("Number is big <br>");
 }
- 
-// 2 Create a variable age = 20. Check if the person is eligible to vote.
- 
-let age1 =20
- if(age1>=18){
- console.log(` the person is eligible for vote`);
+
+//2
+let age = 20;
+if(age >= 18){
+    document.write("Eligible to vote <br>");
+}else{
+    document.write("Not eligible to vote <br>");
 }
- 
-// 3 Create a variable temperature. If temperature > 30 print 'Hot' else print 'Cool'.
- 
-let temp = 20
-if(temp>29){
-    console.log(" its too hot");  
+
+//3
+let temperature = 35;
+if(temperature > 30){
+    document.write("Hot <br>");
+}else{
+    document.write("Cool <br>");
+}
+
+//4
+let number = -5;
+if(number >= 0){
+    document.write("Positive <br>");
+}else{
+    document.write("Negative <br>");
+}
+
+//5
+let n = 8;
+if(n % 2 == 0){
+    document.write("Even <br>");
+}else{
+    document.write("Odd <br>");
+}
+
+document.write("<br>SECTION 2 – Else If <br><br>");
+
+//1
+let marks = 85;
+
+if(marks >= 90){
+    document.write("Grade A <br>");
+}
+else if(marks >= 70){
+    document.write("Grade B <br>");
+}
+else if(marks >= 50){
+    document.write("Grade C <br>");
 }
 else{
-    console.log("cool");
+    document.write("Fail <br>");
 }
- 
-// 4 Check if a number is positive or negative.
-let pos = -1
-if (pos >=0){
-console.log("its positive");
-}else{
-    console.log("its negative");
-    }
- 
-//     let pos = prompt("enter the number")
-// if (pos >=0){
-// alert("its positive");
-// }else{
-//     alert("its negative");
-//     }
- 
-// 5 Check if a number is even or odd using if else
- 
-// let eve = prompt("enter the number")
-// if(eve%2==0){
-// alert( "its even  number");
- 
-// }else{
-//     alert("its odd ") ;
-   
-// }
- 
-               // SECTION 2 – Else If
-// 1 Create a variable marks. 90+ Grade A, 70+ Grade B, 50+ Grade C, Below 50 Fail.
-let grade1 = 71
-if(grade1>90){
-    console.log("a grade");
-    }
-    else if(grade1>70){
-console.log("b grade");
-    }
-else if(grade1>50){
-    console.log("c grade");
-   
+
+//2
+let hour = 14;
+
+if(hour < 12){
+    document.write("Morning <br>");
+}
+else if(hour < 17){
+    document.write("Afternoon <br>");
+}
+else if(hour < 21){
+    document.write("Evening <br>");
 }
 else{
-    console.log("fail");
-   
+    document.write("Night <br>");
 }
- 
-// let gra = prompt("enter the number")
-// if(gra>90){
-//     alert("a grade")
-// } else if(gra>70){
-//     alert("b grade")
-// }else if(gra>50){
-//     alert("c grade")
-// }else {
-//     alert("fail")
-// }
-     
-    //  2 Create variable hour. Print Morning / Afternoon / Evening / Night message.
- 
-let hour = 4
-if(hour>=1 && hour <10){
-    console.log("Morning");
-   
-}else if(hour >=10 && hour <16){
-        console.log("afternoon");
- 
-}else if (hour >=16 && hour <=20){
-        console.log("evening");
- 
-}else{
-    console.log("Night");
-   
+
+//3
+let num2 = 0;
+
+if(num2 > 0){
+    document.write("Positive <br>");
 }
- 
-// 3 Check if a number is 0, positive, or negative.
- 
-let pos1= -88
-if (pos1 >=0 ){
-    console.log("positive");
-   
-}else if (pos1 < 0){
-console.log( "negative");
- 
-}else{
-    console.log("no");
-   
+else if(num2 < 0){
+    document.write("Negative <br>");
 }
- 
- // 4 Create variable score. If score ≥ 100 Winner, 50–99 Good, Below 50 Try again.
- 
-   let sc =49
-   if (sc>=100){
-    console.log("winner");
-   
-   }else if(sc >=50 && sc <=99){
-    console.log("good");
-   
-   }else{
-    console.log("try again");
-   
-   }
- 
-//   5  Create a program to check largest among 3 numbers.
- 
-let a = 10;
-let b = 55;
-let c=45;
-if(a>=b && b>=c){
-    console.log("a is greather");
-   
-}else if (b>=c && c>=a){
-    console.log("b is greather");
-   
-}else{
-        console.log("c is greather");
- 
+else{
+    document.write("Zero <br>");
 }
- 
-    //   SECTION 3 – Switch Statement
- 
-// 1 Create variable day = 1. Print day name using switch.
-   
-    let day =8;
-    switch (day){
-case 1 : console.log("monday"); break;
-case 2 : console.log("tuesday");break;
-case 3 : console.log("wednesday"); break;
-case 4 : console.log("thursday"); break;
-case 5 : console.log("friday"); break ;
-case 6 : console.log("Saturday");break;
-case 7 : console.log("sunday"); break;
-default : console.log("no dates");
- 
- }
- //  2 Create variable trafficLight. Red Stop, Yellow Ready, Green Go.
- 
-let trafficlight = "green"
-switch(trafficlight){
-    case "red" : console.log("stop"); break;
-    case "yellow" : console.log("ready"); break;
-    case "green" : console.log("go"); break;
-    default : console.log("still");
-   
+
+//4
+let score = 80;
+
+if(score >= 100){
+    document.write("Winner <br>");
 }
- 
-//   3 Create variable month. Print season name using switch.
-       
-     let mon = 8
-     switch (mon){
-     case 1 : case 2 : console.log("winter"); break;
-     case 3 : case 3 : case 4 : console.log("summer"); break;
-     case 6 : case 7: case 8: console.log("rainy"); break ;
-     case 9 : case 10 : case 11 : console.log("autumn");break;
-     default : console.log(" no months");
-     }
- 
-   //  4 Create variable role. Admin / User / Guest message.
- 
-   let role = "guest"
-   switch (role){
-    case "admin" : console.log("Admin role"); break;
-    case "user" : console.log("user role"); break;
-    case "guest" : console.log("Guest message"); break;
-    default : console.log(" no roles");
-    }
- 
-    //    5 Create variable grade. Print performance message using switch.
- 
- 
-     let gra = "e"
-     switch (gra){
-        case "a" : console.log("very good"); break;
-        case "b" : console.log("Good"); break ;
-        case "c" : console.log("Average"); break;
-        case "d" : console.log("improve"); break ;
-        case "e" : console.log("fail"); break ;
-        default : console.log("invalid grade");
-       
-     }
-         
-       //SECTION 4 – For Loop
- 
-        // 1 Print numbers 1 to 10.
-for(let fa=1; fa<=10;fa++){
-console.log(fa);
- 
+else if(score >= 50){
+    document.write("Good <br>");
 }
-        // 2 Print numbers 10 to 1.
+else{
+    document.write("Try again <br>");
+}
+
+//5 Largest of 3 numbers
+let a = 10, b = 25, c = 15;
+
+if(a > b && a > c){
+    document.write("Largest: " + a + "<br>");
+}
+else if(b > a && b > c){
+    document.write("Largest: " + b + "<br>");
+}
+else{
+    document.write("Largest: " + c + "<br>");
+}
+
+document.write("<br>SECTION 3 – Switch <br><br>");
+
+//1
+let day = 1;
+
+switch(day){
+case 1:
+document.write("Monday <br>");
+break;
+
+case 2:
+document.write("Tuesday <br>");
+break;
+
+case 3:
+document.write("Wednesday <br>");
+break;
+
+case 4:
+document.write("Thursday <br>");
+break;
+
+case 5:
+document.write("Friday <br>");
+break;
+
+case 6:
+document.write("Saturday <br>");
+break;
+
+case 7:
+document.write("Sunday <br>");
+break;
+}
+
+//2
+let trafficLight = "Red";
+
+switch(trafficLight){
+case "Red":
+document.write("Stop <br>");
+break;
+
+case "Yellow":
+document.write("Ready <br>");
+break;
+
+case "Green":
+document.write("Go <br>");
+break;
+}
+
+//3
+let month = "December";
+
+switch(month){
+
+case "December":
+case "January":
+case "February":
+document.write("Winter <br>");
+break;
+
+case "March":
+case "April":
+case "May":
+document.write("Summer <br>");
+break;
+
+case "June":
+case "July":
+case "August":
+document.write("Rainy <br>");
+break;
+}
+
+//4
+let role = "Admin";
+
+switch(role){
+
+case "Admin":
+document.write("Full Access <br>");
+break;
+
+case "User":
+document.write("Limited Access <br>");
+break;
+
+case "Guest":
+document.write("View Only <br>");
+break;
+}
+
+//5
+let grade = "A";
+
+switch(grade){
+
+case "A":
+document.write("Excellent <br>");
+break;
+
+case "B":
+document.write("Good <br>");
+break;
+
+case "C":
+document.write("Average <br>");
+break;
+
+default:
+document.write("Needs Improvement <br>");
+}
+
+document.write("<br>SECTION 4 – For Loop <br><br>");
+
+//1
+for(let i=1;i<=10;i++){
+document.write(i + " ");
+}
+
+document.write("<br>");
+
+//2
 for(let i=10;i>=1;i--){
-    console.log(i);
-    }
- //          3 Print even numbers from 1 to 20.
- 
- for(let e=1; e<=20; e++){
-    if(e%2==0){
-            console.log(e);
- 
-    }
-   
- }
- 
-     // 4 Print odd numbers from 1 to 20.
-   
-     for(let o=1;o<=20;o++){
-if(o%2==1){
-    console.log(o);
-   
+document.write(i + " ");
 }
-     }
- 
-  //      5 Print multiplication table of 5.
- 
-  for(let m=1; m<=10;m++){
-           console.log(5*m);
-           
-  }
-            console.clear();
- 
-            //  SECTION 5 – While Loop
-//  1 Print numbers 1 to 5 using while.
-let p=1
-   while(p<=5){
-    console.log(p);
-    p++;
-   }
-//2 Print numbers 5 to 1 using while.
- 
-let f =5
-    while(f >= 1){
-        console.log(f);
-        f--;
-    }
-//3 Print even numbers from 1 to 10 using while.
-let nu=1
-while(nu<=10){
-if(nu%2==0){
-console.log(nu);
+
+document.write("<br>");
+
+//3 Even
+for(let i=1;i<=20;i++){
+if(i%2==0){
+document.write(i + " ");
 }
- 
-nu++;
- 
-  }
- 
- // 4 Print sum of numbers from 1 to 10.
- 
- let te=1;
- let sum = 0;
- while (te<=10){
-    sum = sum+te;
-    te++;
- }
-console.log(sum);
- 
-let sq = 1;
+}
+
+document.write("<br>");
+
+//4 Odd
+for(let i=1;i<=20;i++){
+if(i%2!=0){
+document.write(i + " ");
+}
+}
+
+document.write("<br>");
+
+//5 Table
+for(let i=1;i<=10;i++){
+document.write("5 x "+i+" = "+(5*i)+"<br>");
+}
+
+document.write("<br>SECTION 5 – While Loop <br><br>");
+
+//1
+let i=1;
+while(i<=5){
+document.write(i+" ");
+i++;
+}
+
+document.write("<br>");
+
+//2
+let j=5;
+while(j>=1){
+document.write(j+" ");
+j--;
+}
+
+document.write("<br>");
+
+//3 Even numbers
+let k=1;
+while(k<=10){
+if(k%2==0){
+document.write(k+" ");
+}
+k++;
+}
+
+document.write("<br>");
+
+//4 Sum
+let sum=0;
+let s=1;
+
+while(s<=10){
+sum=sum+s;
+s++;
+}
+document.write("Sum = "+sum+"<br>");
+
+//5 Square
+let sq=1;
 while(sq<=5){
-   console. log(sq*sq);
-    sq++;
+document.write((sq*sq)+" ");
+sq++;
 }
- 
-//SECTION 6 – Do While
-// Print numbers 1 to 5
-let nu1 = 1;
- 
-do {
-  console.log(nu1);
-  nu1++;
-} while (nu1 <= 5);
-// Print numbers 5 to 1
-let countDown = 5;
- 
-do {
-  console.log(countDown);
-  countDown--;
-} while (countDown >= 1);
- //Print multiples of 3 up to 30
-let multi = 3;
- 
-do {
-  console.log(multi);
-  multi += 3;
-} while (multi <= 30);
-// Numbers divisible by 4 from 1 to 20
-let value = 1;
- 
-do {
-  if (value % 4 === 0) {
-    console.log(value);
-  }
-  value++;
-} while (value <= 20);
-// Print numbers until value reaches 10
-let numberLimit = 1;
- 
-do {
-  console.log(numberLimit);
-  numberLimit++;
-} while (numberLimit <= 10);
-//SECTION 7 – For Of
- // 1️ Print each character
-let textWord = "javascript";
- 
-for (let letter of textWord) {
-  console.log(letter);
+
+document.write("<br><br>SECTION 6 – Do While <br><br>");
+
+//1
+let d=1;
+do{
+document.write(d+" ");
+d++;
 }
- // 2️ Print each fruit
-let fruitList = ["apple", "banana", "orange"];
- 
-for (let fruitName of fruitList) {
-  console.log(fruitName);
+while(d<=5);
+
+document.write("<br>");
+
+//2
+let d2=5;
+do{
+document.write(d2+" ");
+d2--;
 }
-// 3️ Count characters in string
-let wordCheck = "javascript";
-let totalChars = 0;
- 
-for (let ch of wordCheck) {
-  totalChars++;
+while(d2>=1);
+
+document.write("<br>");
+
+//3 multiples of 3
+let m=3;
+do{
+document.write(m+" ");
+m+=3;
 }
- 
-console.log(totalChars);
-// 4️ Print vowels from string
-let sentence = "javascript";
- 
-for (let letterCheck of sentence) {
-  if ("aeiou".includes(letterCheck)) {
-    console.log(letterCheck);
-  }
+while(m<=30);
+
+document.write("<br>");
+
+//4 divisible by 4
+let dv=1;
+do{
+if(dv%4==0){
+document.write(dv+" ");
 }
-// 5️ Sum of numbers in array
-let numberArray = [10, 20, 30];
-let totalSum = 0;
- 
-for (let numValue of numberArray) {
-  totalSum += numValue;
+dv++;
 }
- 
-console.log(totalSum);
-// SECTION 8 – For In (Object)
-// 1️ Print all values
-let studentData = {
-  name: "Rahul",
-  age: 22,
-  department: "Computer Science"
+while(dv<=20);
+
+document.write("<br>");
+
+//5 until 10
+let t=1;
+do{
+document.write(t+" ");
+t++;
+}
+while(t<=10);
+
+document.write("<br><br>SECTION 7 – For Of <br><br>");
+
+//1
+let str="javascript";
+
+for(let ch of str){
+document.write(ch+" ");
+}
+
+document.write("<br>");
+
+//2
+let fruits=["apple","banana","orange"];
+
+for(let fruit of fruits){
+document.write(fruit+" ");
+}
+
+document.write("<br>");
+
+//3 count
+let count=0;
+
+for(let c1 of str){
+count++;
+}
+
+document.write("Characters = "+count+"<br>");
+
+//4 vowels
+for(let ch of str){
+if("aeiou".includes(ch)){
+document.write(ch+" ");
+}
+}
+
+document.write("<br>");
+
+//5 sum array
+let arr=[10,20,30];
+let total=0;
+
+for(let n1 of arr){
+total+=n1;
+}
+
+document.write("Sum = "+total+"<br>");
+
+document.write("<br>SECTION 8 – For In <br><br>");
+
+let student={
+name:"Rahul",
+age:21,
+department:"CSE"
 };
- 
-for (let property in studentData) {
-  console.log(studentData[property]);
+
+//values
+for(let key in student){
+document.write(student[key]+" ");
 }
- // 2️ Print all keys
-let carDetails = {
-  brand: "Toyota",
-  model: "Camry",
-  year: 2023
-};
- 
-for (let keyName in carDetails) {
-  console.log(keyName);
+
+document.write("<br>");
+
+//keys
+for(let key in student){
+document.write(key+" ");
 }
- // 3️ Print key and value
-let bookInfo = {
-  title: "JavaScript Basics",
-  author: "John",
-  pages: 200
-};
- 
-for (let item in bookInfo) {
-  console.log(item + " : " + bookInfo[item]);
+
+document.write("<br>");
+
+//key value
+for(let key in student){
+document.write(key+" : "+student[key]+"<br>");
 }
-// SECTION 9 – Functions
-// 1️ Addition function
-function addNumbers(firstNum, secondNum) {
-  return firstNum + secondNum;
+
+document.write("<br>SECTION 9 – Functions <br><br>");
+
+function add(a,b){
+return a+b;
 }
- 
-console.log(addNumbers(5, 3));
- // 2️ Square function
-function squareValue(numberInput) {
-  return numberInput * numberInput;
+
+document.write("Addition = "+add(10,5)+"<br>");
+
+function square(num){
+return num*num;
 }
- 
-console.log(squareValue(6));
+
+document.write("Square = "+square(6)+"<br>");
+
+</script>
+
+</body>
+</html>
